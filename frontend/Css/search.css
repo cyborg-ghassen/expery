@@ -1,0 +1,26 @@
+.expery {
+  font-weight: 700;
+  font-size: 30px;
+}
+.nav-itemm {
+  margin-left: 100px;
+}
+.search {
+  background-color: #d6dbdf;
+  padding: 17px 42px 22px 178px;
+  border-radius: 20px;
+  border: solid 1px #aeb6bf;
+}
+.select-byField {
+  border: solid 1px #aeb6bf;
+  background-color: #d6dbdf;
+  border-radius: 20px;
+  padding: 0px 18px 0px 95px;
+}
+.valider {
+  border-radius: 20px;
+  padding: 0px 55px 0px 63px;
+}
+.copyright {
+  font-weight: 700;
+}
