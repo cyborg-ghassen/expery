@@ -1,81 +1,19 @@
 import React, { Component } from "react";
 import { Row, Col, FormGroup, FormControl, Button } from 'react-bootstrap';
 import '../../Css/Form.css';
-import { isEmail, isEmpty, isLength, isContainWhiteSpace } from '../Forms/validator';
 import NavigationBar from '../Nav/NavigationBar';
+export class Login extends Component {
 
-export class Login extends Component { 
-
-    constructor(props) {
-        super(props)
-
-        this.state = {
-            formData: {}, // Contains login form data
-            errors: {}, // Contains login field errors
-            formSubmitted: false, // Indicates submit status of login form
-            loading: false // Indicates in progress state of login form
-        }
-    }
-
-    handleInputChange = (event) => {
-        const target = event.target;
-        const value = target.value;
-        const name = target.name;
-
-        let { formData } = this.state;
-        formData[name] = value;
-
-        this.setState({
-            formData: formData
-        });
-    }
-
-    validateLoginForm = (e) => {
-
-        let errors = {};
-        const { formData } = this.state;
-
-        if (isEmpty(formData.email)) {
-            errors.email = "Email can't be blank";
-        } else if (!isEmail(formData.email)) {
-            errors.email = "Please enter a valid email";
-        }
-
-        if (isEmpty(formData.password)) {
-            errors.password = "Password can't be blank";
-        }  else if (isContainWhiteSpace(formData.password)) {
-            errors.password = "Password should not contain white spaces";
-        } else if (!isLength(formData.password, { gte: 6, lte: 16, trim: true })) {  
-            errors.password = "Password's length must between 6 to 16";
-        }
-
-        if (isEmpty(errors)) {
-            return true;
-        } else {
-            return errors;
-        }
-    }
-
-    login = (e) => {
-
-        e.preventDefault();
-
-        let errors = this.validateLoginForm();
-
-        if(errors === true){
-            alert("You are successfully signed in...");
-            window.location.reload()
-        } else {
-            this.setState({
-                errors: errors,
-                formSubmitted: true
-            });
-        }
-    }
+  componentDidMount() {
+    const apiUrl = 'http://localhost:4000/auth/signin';
+    fetch(apiUrl)
+    .then((response) => response.json())
+    .then((data) => console.log('This is your data', data));
+  }
 
     render() {
 
-        const { errors, formSubmitted } = this.state;
+        
 
         return (
             <div className="Login">
@@ -84,14 +22,12 @@ export class Login extends Component {
                  <Col md={{ span: 4, offset: 4 }}> 
                 <form onSubmit={this.login} className="formulaire px-4 py-5">
           
-                  <FormGroup controlId="email" validationState={formSubmitted ? (errors.email ? 'error' : 'success') : null}>
+                  <FormGroup controlId="email" >
                     <FormControl type="text" className='sign' name="email" placeholder="Enter your email" onChange={this.handleInputChange} />
-                    {errors.email && <span className="text-danger">{errors.email}</span>}
                   </FormGroup>
 
-                  <FormGroup controlId="password" validationState={formSubmitted ? (errors.password ? 'error' : 'success') : null}>
+                  <FormGroup controlId="password" >
                     <FormControl type="password" className='sign' name="password" placeholder="Enter your password" onChange={this.handleInputChange} />
-                    {errors.password && <span className="text-danger">{errors.password}</span>}
                   </FormGroup>
 
                   <Button type="submit" bsStyle="primary" className='submitt'>Sign In</Button>
@@ -110,7 +46,18 @@ export default Login;
 
 
 
-
+// class myComponent extends React.Component {
+//   componentDidMount() {
+//     const apiUrl = 'https://api.github.com/users/hacktivist123/repos';
+//     fetch(apiUrl)
+//       .then((response) => response.json())
+//       .then((data) => console.log('This is your data', data));
+//   }
+//   render() {
+//     return <h1>my Component has Mounted, Check the browser 'console' </h1>;
+//   }
+// }
+// export default myComponent;
 
 
 
