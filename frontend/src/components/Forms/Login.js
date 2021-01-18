@@ -2,11 +2,12 @@ import React, { Component } from "react";
 import { Row, Col, FormGroup, FormControl, Button } from 'react-bootstrap';
 import '../../Css/Form.css';
 import NavigationBar from '../Nav/NavigationBar';
+import axios from "axios";
 export class Login extends Component {
 
   componentDidMount() {
     const apiUrl = 'http://localhost:4000/auth/signin';
-    fetch(apiUrl)
+    axios.post(apiUrl)
     .then((response) => response.json())
     .then((data) => console.log('This is your data', data));
   }

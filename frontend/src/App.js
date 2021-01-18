@@ -29,10 +29,9 @@ class App extends Component {
       .then(res => this.setState({apiResponse: res}));
   }
 
-  componentWillMount(){
-    this.callAPI();
-  }
+  
   render(){
+    this.callAPI();
   return (
     <BrowserRouter>
         <div>
@@ -75,7 +74,6 @@ class App extends Component {
         </Switch>
         </Router>*/}
           </div>
-          <p>{this.state.apiResponse}</p>
           < Footer />
     </BrowserRouter>
     
