@@ -13,7 +13,7 @@ app.use(bodyParser.json())
 app.use(cors())
 
 const auth = require('./routes/auth');
-app.use('/auth', auth);
+app.use('/auth/', auth);
 
 app.listen(PORT, function() {
     console.log('App started')
