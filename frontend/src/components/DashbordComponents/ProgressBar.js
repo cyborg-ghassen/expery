@@ -1,5 +1,4 @@
 import React from 'react'
-import Progress from "../../Css/Progress.css"
 
 const ProgressBar = (props) => {
     const { bgcolor, completed, value, label, percent} = props;
