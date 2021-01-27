@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import './App.css';
 import { BrowserRouter, Route } from "react-router-dom";
 import Meetings from "./components/SideBar/Meetings";
 import Messages from "./components/SideBar/Messages";
@@ -15,7 +14,8 @@ import {Custumers} from "./components/SideBar/Custumers"
 import {Sales} from "./components/SideBar/Sales"
 import {Reports} from "./components/SideBar/Reports"
 import Form from "./components/Forms/Form";
-import Footer from './components/Footer'
+import Footer from './components/Footer';
+import Chat from './components/Chat/components/App/Chat';
 
 class App extends Component {
   constructor(props){
@@ -58,6 +58,7 @@ class App extends Component {
            <Route path="/custumers" component={Custumers} />
            <Route path="/sales" component={Sales} />
            <Route path="/reports" component={Reports} />
+           <Route path="/Chat" component={Chat} />
 
 
 

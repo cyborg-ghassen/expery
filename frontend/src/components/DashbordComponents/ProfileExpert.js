@@ -13,6 +13,7 @@ class ProfileExpert extends Component{
            <ul  className="text-center listeicons mr-3"> 
             <li className="row icon"><i class="fas fa-users meet"></i><Link to="/Custumers"><h5> Custumers</h5></Link></li>
             <li className=" row icon"><i class="fab fa-meetup fa-1x mr-2 mb-3 meet"></i> <Link to="/Meetings"><h5> Meetings</h5></Link> </li> 
+            <li className=" row "><i class="far-fa-comment-dots fa-1x-mr-2-mb-3 meet"></i> <Link to="/Chat"><h5> Messages </h5></Link></li>
             <li className=" row icon"><i class="fas fa-calendar-alt fa-1x mr-2 mb-3  meet"></i><Link to="/calender"><h5>Calender</h5></Link> </li> 
             <li className=" row icon"><i class="fas fa-comment-dollar meet"></i><Link to="/sales"><h5> Sales</h5></Link> </li> 
             <li className=" row icon"><i class="fas fa-cogs fa-1x mr-2 mb-3 meet"></i><Link to="/settings"><h5>Settings</h5></Link> </li> 

@@ -1,4 +1,4 @@
-import React, { Component ,useState} from 'react';
+import React, {useState} from 'react';
 import SearchExpert from "../DashbordComponents/SearchExpert";
 import ProfileExpert from "../DashbordComponents/ProfileExpert";
 import Barchart from "../Chart/chart";
