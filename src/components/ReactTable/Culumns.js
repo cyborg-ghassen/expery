@@ -1,0 +1,27 @@
+export const CULUMNS=[
+    {
+        Header:'Employee',
+        Footer:'Employee',
+        accessor:'Employee'
+    },
+    {
+        Header:'Location',
+        Footer:'Location',
+        accessor:'Location'
+    },
+    {
+        Header:'Department',
+        Footer:'DEpartment',
+        accessor:'Departement'
+    },
+    {
+        Header:'Sales',
+        Footer:'Sales',
+        accessor:'Sales'
+    },
+    {
+        Header:'Pay',
+        Footer:'Pay',
+        accessor:'Pay'
+    }
+]

@@ -1,0 +1,99 @@
+body {
+  background-color: #f1f3f5;
+}
+.image1 {
+  border-radius: 69%;
+  width: 104px;
+  height: 121px;
+}
+.image2 {
+  border-radius: 50%;
+  width: 72px;
+}
+.cards {
+  margin-left: px;
+  display: flex;
+  margin-top: 30px;
+}
+.card-title {
+  letter-spacing: 3px;
+  color: #566573;
+}
+.input-item {
+  background-color: #d6dbdf;
+  padding: 42px 60px 34px 166px;
+  border-radius: 20px;
+  border: solid 1px #aeb6bf;
+}
+.box-button {
+  border-radius: 20px;
+  padding: 9px 94px 9px 86px !important;
+  font-weight: 500;
+}
+.role {
+  color: #5499c7;
+  font-weight: 500;
+}
+.profile {
+  border-left: 3px solid rgba(0, 0, 0, 0.1) !important;
+}
+.all-expert {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.box-item {
+  text-align: center !important;
+
+  margin-top: 93px;
+}
+.comment {
+  color: #5dade2;
+}
+.title-experts {
+  text-transform: uppercase;
+  color: #566573;
+  letter-spacing: 2px;
+  margin-right: 900px;
+}
+.more-infos {
+  background-color: #5dade2;
+  border-radius: 50px;
+  padding: 0 40px;
+  color: white;
+  font-weight: 500;
+}
+.mySearch {
+  margin-top: 30px;
+}
+.icon-user {
+  font-size: 60px;
+  color: #007bff;
+}
+li h5 {
+  color: #566573;
+  letter-spacing: 2px;
+  font-weight: 500;
+}
+.meet {
+  font-size: 22px;
+}
+.calender {
+  font-size: 10px;
+}
+
+hr {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: 0;
+  border-top: 3px solid rgba(0, 0, 0, 0.1) !important;
+}
+.edit {
+  font-size: 12px;
+}
+.text-danger {
+  font-size: 21px;
+}
+.profile-expert {
+  margin-top: 20px;
+}
