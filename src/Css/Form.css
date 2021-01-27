@@ -1,0 +1,40 @@
+.Login {
+    background: gray;
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../Asets/backImage.jpg");
+    background-size: cover;
+    background-position: center center;
+}
+
+.formulaire {
+    background-color: rgba(58, 57, 57, 0.397);
+    border-radius: 10px;
+    margin-top: 180px;
+}
+
+.sign {
+    border: 2px solid rgb(80, 80, 80);
+    padding: 5px;
+    color: black;
+    background-color: white;
+    width: 100%;
+    font-size: 18px;
+    border-radius: 50px;
+}
+
+.submitt {
+    padding: 12px;
+    color: white;
+    border-radius: 50px;
+    text-align: center;
+    cursor: pointer;
+    width: 50%;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.sign::placeholder {
+    color: rgb(226, 224, 224)26, 50, 50)26, 50, 50);
+    font-size: 18px;
+}

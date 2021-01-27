@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+.searchExpert {
+    background-color: #d6dbdf;
+    padding: 17px 20px 22px 70px;
+    border-radius: 20px;
+    border: solid 1px #aeb6bf;
+}
+
+.meet {
+    font-size: 22px;
+    color: black;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+hr {
+    margin-top: 50px;
+}
+
+.bodyChart {
+    width: 450px;
+    height: 150px;
+}
+
+hr {
+    margin-top: 70px;
+}
+
+.containerS {
+    margin: 30px;
+}
+
+.select-container {
+    padding: 10px;
+    position: relative;
+}
+
+.select-container select {
+    width: 100%;
+    border: 0;
+    background-color: #5499c7;
+    font-size: 18px;
+    outline: none;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+.select-container:after {
+    content: "settings";
+    font-family: "material icons";
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    font-size: 30px;
+    color: #fff;
+}
+
+input {
+    width: 150px;
+    border: 2px solid #5499c7;
+}
+
+.inputs {
+    display: flex;
+    justify-content: space-around;
+    margin-left: auto;
+}
+
+.vl {
+    border-left: 3px solid rgba(0, 0, 0, 0.1) !important;
+    height: 500px;
+    margin-top: -100px;
+    margin-left: 170px;
+}
